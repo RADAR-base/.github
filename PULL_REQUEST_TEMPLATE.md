@@ -33,8 +33,6 @@ Link to the RADAR-base RFC if related. _(optional)_  -->
 
 <!-- Documentation is part of the definition of "done". PRs will not be accepted until this section is complete and verified by a reviewer. -->
 
-**Author:**
-
 - [ ] I have checked whether this change requires documentation updates, and have made them in this PR (or a linked docs PR: <!-- link -->)
 - [ ] New or changed configuration options, environment variables, endpoints, schemas or Docker/Helm values are documented, including defaults
 - [ ] `CHANGELOG` / release notes are updated
@@ -42,17 +40,11 @@ Link to the RADAR-base RFC if related. _(optional)_  -->
 
 ## How Has This Been Tested?
 
-<!-- Describe how you tested your changes: test environment, versions, devices/platforms, and the tests you ran. Include unit, integration and manual testing where relevant. -->
+<!-- Describe unit/integration tests added, or how you verified this change in a staging/local environment --> 
 
-- [ ] I have added or updated tests to cover my changes
-- [ ] All new and existing tests pass locally and in CI
-- [ ] I have tested with a realistic setup (e.g. RADAR-Kafka stack, Docker Compose or Kubernetes deployment) where relevant
+ - [ ] Automated tests pass
+ - [ ] Tested manually (e.g. Docker Compose, local service)
 
-## Data Privacy and Security
-
-<!-- RADAR-base handles sensitive participant and health-related data. Consider the impact of this change on privacy and security. -->
-
-**Notes:** <!-- Describe any privacy or security considerations, or write N/A. -->
 
 ## Compatibility and Deployment
 
@@ -69,12 +61,19 @@ Link to the RADAR-base RFC if related. _(optional)_  -->
 
 <!-- For UI or app changes, show before and after. -->
 
-## Checklist
 
-- [ ] My code follows the code style and contribution guidelines of this project (see `CONTRIBUTING`)
-- [ ] I have performed a self-review of my code
-- [ ] My changes generate no new warnings or linter errors
-- [ ] The PR is focused on a single concern and is reasonably sized to review
-- [ ] Commit history is clean and messages are meaningful
-- [ ] I have targeted the correct base branch
-- [ ] Any follow-up work is captured in a new issue
+## Critical Considerations (Check if applicable) 
+
+
+- My code follows the code style and contribution guidelines of this project (see `CONTRIBUTING`)
+
+### 🔒 Data Privacy & Security
+- [ ] No participant-identifiable data, secrets, or raw credentials are logged or committed
+- [ ] Auth, access control, or ethics/GDPR impacts have been considered
+
+### ⚠️ Compatibility & Deployment (Breaking changes, Schemas, Migrations)
+- [ ] Kafka/Avro schemas and APIs maintain backwards compatibility
+- [ ] Database or configuration migrations are included and documented *Upgrade notes:* <!-- describe migration steps or N/A -->
+- [ ] Documentation (README, docs site, CHANGELOG) updated if applicable
+
+

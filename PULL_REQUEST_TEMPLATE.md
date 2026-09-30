@@ -10,12 +10,9 @@ Delete any section that genuinely does not apply, and mark it "N/A" rather than 
 <!--What problem does this solve? Why is this approach the right one? Note any alternatives you considered.
 Link to the RADAR-base RFC if related. _(optional)_  -->
 
-
 ## Related Issue(s)
 
 <!-- Link the issue(s) this PR addresses, e.g. "Closes #123". For new features or larger changes, please discuss in an issue first. For bugs, the issue should describe steps to reproduce. -->
-
-
 
 ## Type of Change
 
@@ -40,11 +37,10 @@ Link to the RADAR-base RFC if related. _(optional)_  -->
 
 ## How Has This Been Tested?
 
-<!-- Describe unit/integration tests added, or how you verified this change in a staging/local environment --> 
+<!-- Describe unit/integration tests added, or how you verified this change in a staging/local environment -->
 
- - [ ] Automated tests pass
- - [ ] Tested manually (e.g. Docker Compose, local service)
-
+- [ ] Automated tests pass
+- [ ] Tested manually (e.g. Docker Compose, local service)
 
 ## Compatibility and Deployment
 
@@ -61,19 +57,17 @@ Link to the RADAR-base RFC if related. _(optional)_  -->
 
 <!-- For UI or app changes, show before and after. -->
 
-
-## Critical Considerations (Check if applicable) 
-
+## Critical Considerations (Check if applicable)
 
 - My code follows the code style and contribution guidelines of this project (see `CONTRIBUTING`)
 
 ### 🔒 Data Privacy & Security
+
 - [ ] No participant-identifiable data, secrets, or raw credentials are logged or committed
 - [ ] Auth, access control, or ethics/GDPR impacts have been considered
 
 ### ⚠️ Compatibility & Deployment (Breaking changes, Schemas, Migrations)
+
 - [ ] Kafka/Avro schemas and APIs maintain backwards compatibility
 - [ ] Database or configuration migrations are included and documented *Upgrade notes:* <!-- describe migration steps or N/A -->
 - [ ] Documentation (README, docs site, CHANGELOG) updated if applicable
-
-
